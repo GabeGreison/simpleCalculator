@@ -8,16 +8,50 @@
 </head>
 
 <body>
-    <script src="./simpleCalculator.js"></script>
-<h1>Calculadora Simples</h1>
-<fieldset>
-    <legend>Você quer fazer um calculo?</legend>
+  <header>  
+      <h1>Calculadora Simples</h1> 
+</header>
+
+<main>
+
+<fieldset style="width: fit-content;">
+    <legend>
+       <strong>
+           Insira os dados
+        </strong> 
+    </legend>
     
-    <label for="yes">sim</label>
-    <input type="radio" name="coffee" id="yes">
-    
-    <label for="no">não</label>
-    <input type="radio" name="coffee" id="no">
+    <br>
+
+<form action="" method="GET" id="numero 1" name="numero1">
+
+    <label for="numero1">Primeiro numero</label>
+    <input id="numero1" type="number" placeholder="Digite o primeiro numero" size="15">
+    <button type="reset"> limpar</button>
+</form>
+
+<br>
+
+<form action="">
+    <label for="ope">Escolha um operador</label>
+    <input type="" name="operadores" id="ope" list="operadores" size="10" placeholder="Operador">
+    <button type="reset">Limpar</button>
+</form>
+
+<br>
+
+<form action="" method="GET" id="numero 2" name="numero2">
+    <label for="numero2">Segundo numero</label>
+    <input id="numero2" type="number" placeholder="Digite o segundo numero" size="15">
+    <button type="reset"> limpar</button>
+</form>
+
+<br>
+
+<form action="" method="get" name="resultado" id>
+    <label for="resultado">Resultado:</label>
+    <input type="text" id="resultado">
+</form>
 </fieldset>
 
 <datalist id="operadores">
@@ -26,27 +60,10 @@
     <option value="Multiplicação"></option>
     <option value="Divisão"></option>
 </datalist>
+  
+  <script src="./simpleCalculator.js"></script>
 
-<form action=""></form>
-<form action="" method="GET" id="numero 1">
-
-    <label for="senha">Primeiro numero</label>
-    <input id="senha" type="number" placeholder="digite o primeiro numero" size="15">
-    <button type="reset"> limpar</button>
-
-</form>
-
-<label for="ope">Escolha um operador</label>
-<input type="" name="operadores" id="ope" list="operadores">
-
-<form action="" method="GET" id="numero 2">
-
-    <label for="senha">Segundo numero</label>
-    <input id="senha" type="number" placeholder="digite o segundo numero" size="15">
-    <button type="reset"> limpar</button>
-
-</form>
-
-<input type="file">
+</main>
 </body>
+
 </html>
