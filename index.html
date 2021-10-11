@@ -21,48 +21,31 @@
         </strong> 
     </legend>
     
-    <br>
-
-<form action="" method="GET" id="numero 1" name="numero1">
-
+<br>
     <label for="numero1">Primeiro numero</label>
-    <input id="numero1" type="number" placeholder="Digite o primeiro numero" size="15">
-    <button type="reset"> limpar</button>
-</form>
+    <input id="numero1" type="number" placeholder="Digite o primeiro numero" size="15" form="total">
+<br><br>
 
-<br>
-
-<form action="">
-    <label for="ope">Escolha um operador</label>
-    <input type="" name="operadores" id="ope" list="operadores" size="10" placeholder="Operador">
-    <button type="reset">Limpar</button>
-</form>
-
-<br>
-
-<form action="" method="GET" id="numero 2" name="numero2">
+<label for="operadores">
+    Operador
+</label>
+    <select id="operadores" form="total">
+        <option value="">selecione um operador</option>
+        <option value="Soma">Soma</option>
+        <option value="Subtração">Subtração</option>
+        <option value="Multiplicação">Multiplicação</option>
+        <option value="Divisão">Divisão</option>
+    </select>
+<br><br>
     <label for="numero2">Segundo numero</label>
     <input id="numero2" type="number" placeholder="Digite o segundo numero" size="15">
-    <button type="reset"> limpar</button>
-</form>
-
+<br><br>
+    <form action="" method="get" id="total">
+        <button type="submit">Enviar</button>
+    </form>
 <br>
-
-<form action="" method="get" name="resultado" id>
-    <label for="resultado">Resultado:</label>
-    <input type="text" id="resultado">
-</form>
 </fieldset>
-
-<datalist id="operadores">
-    <option value="Soma"></option>
-    <option value="Subtração"></option>
-    <option value="Multiplicação"></option>
-    <option value="Divisão"></option>
-</datalist>
-  
-  <script src="./simpleCalculator.js"></script>
-
+<script src="./simpleCalculator.js"></script>
 </main>
 </body>
 
